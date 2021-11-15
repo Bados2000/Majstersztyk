@@ -1,20 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/box_inset_layout_padding"
-    tools:deviceIds="wear">
+    tools:deviceIds="wear"
+    android:id="@+id/boxInsetLayout1">
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/inner_frame_layout_padding"
-        app:boxedEdges="all">
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hello_world" />
+        app:boxedEdges="all"
+      
+        android:id="@+id/frameLayout1"
+        android:background="@android:color/holo_blue_bright">
+        <Button
+            android:text="Start"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/button1"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="50px" >
+        </Button>
+        <Button
+            android:text="Statystyki"
+            android:layout_width="150px"
+            android:layout_height="100px"
+            android:id="@+id/button2"
+            android:layout_marginLeft="130px"
+            android:layout_marginTop="50px">
+        </Button>
+        <Button
+            android:text="Powrót"
+            android:layout_width="120px"
+            android:layout_height="100px"
+            android:id="@+id/button3"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="150px" >
+        </Button>
+        <Button
+            android:text="Ustawienia"
+            android:layout_width="160px"
+            android:layout_height="100px"
+            android:id="@+id/button4"
+            android:layout_marginLeft="135px"
+            android:layout_marginTop="150px"
+            android:textSize="22px"
+            android:textStyle="normal" >
+        </Button>
     </FrameLayout>
 </androidx.wear.widget.BoxInsetLayout>
