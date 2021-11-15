@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:deviceIds="wear"
+    android:id="@+id/boxInsetLayout1">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:boxedEdges="all"
+      
+        android:id="@+id/frameLayout1"
+        android:background="@android:color/holo_blue_bright">
+        <Button
+            android:text="Mapa"
+            android:layout_width="130px"
+            android:layout_height="100px"
+            android:id="@+id/button1"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="20px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px">
+        </Button>
+        <Button
+            android:text="Kalorie"
+            android:layout_width="160px"
+            android:layout_height="100px"
+            android:id="@+id/button2"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="40px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px">
+        </Button>
+        <Button
+            android:text="Powrót"
+            android:layout_width="130px"
+            android:layout_height="100px"
+            android:id="@+id/button3"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="120px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px" >
+        </Button>
+        <Button
+            android:text="Zdrowie"
+            android:layout_width="160px"
+            android:layout_height="100px"
+            android:id="@+id/button4"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="150px"
+            android:textSize="24px"
+            android:textStyle="normal"
+            android:paddingRight="10px"
+            android:paddingLeft="10px"
+            android:fadingEdge="none"
+            android:layout_gravity="top" >
+        </Button>
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>

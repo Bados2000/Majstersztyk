@@ -7,6 +7,7 @@ using Android.Support.Wearable.Activity;
 
 namespace AplikacjaNaZegarek
 {
+    
     [Activity(Label = "@string/app_name", MainLauncher = true)]
     public class MainActivity : WearableActivity
     {
@@ -20,8 +21,11 @@ namespace AplikacjaNaZegarek
             textView = FindViewById<TextView>(Resource.Id.text);
             SetAmbientEnabled();
         }
+        async void GoToS2(object sender, EventArgs args)
+        {
+            await.Navigation
+        }
     }
 }
 
 
-//oj9j9j9j

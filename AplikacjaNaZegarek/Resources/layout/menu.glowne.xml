@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <androidx.wear.widget.BoxInsetLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,11 +9,7 @@
     tools:deviceIds="wear"
     android:id="@+id/boxInsetLayout1">
 
-    <navigation
-        android:id="@+id/nav_graph"
-        android:layout_width="match_parent" >
-
-    </navigation>
+    
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,6 +21,41 @@
         android:alwaysDrawnWithCache="false"
         android:animateLayoutChanges="false">
 
+        <Button
+            android:text="Start"
+            android:layout_width="130px"
+            android:layout_height="100px"
+            android:id="@+id/button1"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="20px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:onClick="GoToS2"
+            android:imeOptions="normal|flagNavigateNext"
+            >
+        </Button>
+
+        <Button
+            android:text="Statystyki"
+            android:layout_width="160px"
+            android:layout_height="100px"
+            android:id="@+id/button2"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="40px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px">
+        </Button>
+
+        <Button
+            android:text="Powrót"
+            android:layout_width="130px"
+            android:layout_height="100px"
+            android:id="@+id/button3"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="120px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px" >
+        </Button>
         <Button
             android:text="Ustawienia"
             android:layout_width="160px"
@@ -39,16 +70,5 @@
             android:fadingEdge="none"
             android:layout_gravity="top" >
         </Button>
-        <ImageButton
-            android:id="@+id/buttonxD"
-            android:Source="xamagon.png"
-            android:BackgroundColor="Transparent"
-            android:WidthRequest="300"
-            android:HeightRequest="300"
-            android:FlexLayout.AlignSelf="Center"
-            android:FlexLayout.Grow="1"
-            android:Clicked="ImageButton_Clicked"
-            android:Aspect="AspectFit">
-        </ImageButton>
     </FrameLayout>
 </androidx.wear.widget.BoxInsetLayout>
