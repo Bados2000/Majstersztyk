@@ -41,7 +41,7 @@
         </Button>
         <ImageButton
             android:id="@+id/buttonxD"
-            android:Source="xamagon.png"
+            android:Source="4kropki.png"
             android:BackgroundColor="Transparent"
             android:WidthRequest="300"
             android:HeightRequest="300"
